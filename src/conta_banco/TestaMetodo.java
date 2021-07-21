@@ -2,11 +2,19 @@ package conta_banco;
 
 public class TestaMetodo {
     public static void main(String[] args) {
-        Conta conta = new Conta();
-        conta.saldo = 200;
-        conta.deposita(50);
+        Conta contaDoPaulo = new Conta();
+        contaDoPaulo.saldo = 100;
+        contaDoPaulo.deposita(50);
+        System.out.println(contaDoPaulo.saldo);
 
-        System.out.println("O saldo agora é: " + conta.saldo);
+        boolean conseguiuRetirar = contaDoPaulo.saca(20);
+        System.out.println(contaDoPaulo.saldo);
+        System.out.println(conseguiuRetirar);
 
+        Conta contaDaMarcela = new Conta();
+        contaDaMarcela.deposita(1000);
+
+        contaDaMarcela.transfere(300, contaDoPaulo);
+        System.out.println(contaDaMarcela.saldo);
     }
 }
