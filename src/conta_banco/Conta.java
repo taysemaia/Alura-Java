@@ -5,4 +5,9 @@ public class Conta {
         int agencia;
         int numero;
         String titular;
+
+        public void deposita(double valor){
+                this.saldo += valor;
+                System.out.println("O valor " + valor + " foi depositado");
+        }
 }
