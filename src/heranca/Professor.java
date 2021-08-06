@@ -9,15 +9,15 @@ public class Professor {
         private String nomeCurso;
         private double salario;
 
-        public double calcularSalarioLiquido(){
+       // public double calcularSalarioLiquido(){
 
          //   return x;
-        };
+        //};
 
-        public double verificarAprovado(){
+       // public double verificarAprovado(){
 
            // return i;
-        };
+        //};
 
 
 }
